@@ -373,8 +373,6 @@ main {
 .centered-image {
       display: flex;
       justify-content: center;
-      align-items: center;
-      height: 100vh; /* optional: vertically center in full viewport */
     }
 
 .centered-image img {
