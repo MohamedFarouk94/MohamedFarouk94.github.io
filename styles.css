@@ -266,6 +266,8 @@ main {
 .about__desc {
   font-size: 1rem;
   max-width: 600px;
+  text-align: center;
+  margin: 0 auto;
 }
 
 .about__desc,
