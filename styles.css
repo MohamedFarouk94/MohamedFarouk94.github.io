@@ -376,7 +376,7 @@ main {
     }
 
 .centered-image img {
-    width: 300px; /* force width */
+    width: 500px; /* force width */
     height: auto; /* maintain aspect ratio */
   }
 
