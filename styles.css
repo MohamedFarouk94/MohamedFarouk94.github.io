@@ -377,6 +377,11 @@ main {
       height: 100vh; /* optional: vertically center in full viewport */
     }
 
+.centered-image img {
+    width: 300px; /* force width */
+    height: auto; /* maintain aspect ratio */
+  }
+
 @media (max-width: 600px) {
   .header {
     height: 6em;
