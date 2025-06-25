@@ -370,6 +370,13 @@ main {
   flex-wrap: nowrap; /* forces them to stay in one line */
 }
 
+.centered-image {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh; /* optional: vertically center in full viewport */
+    }
+
 @media (max-width: 600px) {
   .header {
     height: 6em;
