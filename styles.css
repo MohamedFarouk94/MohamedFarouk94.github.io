@@ -362,6 +362,14 @@ main {
   transition: transform 0.2s ease-in-out;
 }
 
+.btn-row {
+  display: flex;
+  justify-content: center; /* centers the row horizontally */
+  align-items: center;
+  gap: 1.5rem; /* spacing between buttons */
+  flex-wrap: nowrap; /* forces them to stay in one line */
+}
+
 @media (max-width: 600px) {
   .header {
     height: 6em;
