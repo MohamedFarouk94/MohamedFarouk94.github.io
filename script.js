@@ -1,3 +1,4 @@
+console.log("Script loaded!");
 const body = document.body
 
 const btnTheme = document.querySelector('.fa-moon')
