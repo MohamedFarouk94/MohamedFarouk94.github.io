@@ -273,12 +273,6 @@ main {
 .about__desc,
 .about__contact {
   margin-top: 2.4em;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 1rem; /* optional: spacing between buttons/icons */
-  text-align: center; /* helps center inline content if any */
 }
 
 .about .link--icon {
