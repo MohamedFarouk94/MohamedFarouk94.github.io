@@ -260,8 +260,10 @@ main {
 }
 
 .about__role {
-  margin-top: 1.2em;
+  margin: 1.2em auto 0 auto;
   text-align: center;
+  display: block;
+  width: 100%;
 }
 
 .about__desc {
