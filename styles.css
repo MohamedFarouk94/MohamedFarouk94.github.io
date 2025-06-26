@@ -403,13 +403,11 @@ main {
     left: 0;
     top: 5em;
     background-color: var(--clr-bg);
-    width: 0;
-    overflow: hidden;
-    transition: width 0.2s ease-in-out;
+    display: none; /* ← hide by default */
   }
 
   .display-nav-list {
-    width: 100%;
+    display: flex; /* ← show when toggled */
   }
 
   .nav__list-item {
