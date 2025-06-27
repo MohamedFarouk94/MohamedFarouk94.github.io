@@ -14,6 +14,10 @@ const getBtnTheme = localStorage.getItem('portfolio-btn-theme')
 
 addThemeClass(getBodyTheme, getBtnTheme)
 
+//
+btnTheme.classList.remove('fa-moon', 'fa-sun')
+btnTheme.classList.add(getBodyTheme === 'dark' ? 'fa-sun' : 'fa-moon')
+
 const isDark = () => body.classList.contains('dark')
 
 const setTheme = (bodyClass, btnClass) => {
