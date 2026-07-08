@@ -9,6 +9,7 @@ Live at: https://mohamedfarouk94.github.io/
 ```
 .
 ├── index.html          # page structure, all sections
+├── favicon.png
 ├── css/
 │   └── styles.css      # everything visual
 └── js/
@@ -31,8 +32,6 @@ There's nothing to build. Just open `index.html` in a browser.
 - **Notebooks** — Kaggle-only stuff (competitions, EDA, simulations) that isn't a "project" per se, kept separate on purpose.
 - **Skills** — self-explanatory, my toolset.
 - **Contact** — No only contact channels, but any profiles of mine I wanted to share, including my resume.
-
-## To-do / things I keep meaning to do
 
 ## License
 
