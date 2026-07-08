@@ -18,7 +18,7 @@ const CURRENTLY = [
     title: "Stanford's LLM Curriculum",
     detail: [
       "I'm currently self-studying the Stanford CME295 Transformers & LLMs full course.",
-      "I believe it's the finest method to revisit the mathematical core of AI, which is something you may easily overlook by focusing just on high-level design."
+      "I believe it's the finest way to revisit the mathematical core of LLM and NLP, which is something you may easily drop if your work heavily depends on high-level design."
     ]
   },
    
@@ -169,7 +169,7 @@ const NOTEBOOKS = [
 
 /* ---- Skills — grouped by category. Add/remove freely. */
 const SKILLS = [
-  { group: "Languages", items: ["Python", "C/C++", "SQL", "JavaScript", "MATLAB/Octave"] },
+  { group: "Languages", items: ["Python", "C/C++", "SQL", "JavaScript", "Java/Kotlin", "MATLAB/Octave"] },
   { group: "Data", items: ["Pandas", "NumPy", "SciPy"] },
   {
     group: "Machine Learning",
