@@ -1,11 +1,10 @@
 /* ============================================================
-   CONTENT.JS — edit this file to update the site.
-   Nothing here touches layout or styling — just data.
-   Add/remove/reorder items freely; the page re-renders itself.
+   CONTENT.JS — A file that sould be edited to update the site
+   Nothing here touches layout or styling
    ============================================================ */
 
-/* ---- "Currently" — what you're doing right now.
-   Edit this often. status: "active" | "ongoing" | "paused"     */
+/* ---- "Currently" — what I'm doing right now.
+   status: "active" | "ongoing" | "paused"     */
 const CURRENTLY = [
   {
     status: "active",
@@ -210,6 +209,6 @@ const CONTACT_LINKS = [
   { type: "upwork", href: "https://www.upwork.com/freelancers/~010a4765fdccc37961" },
   { type: "whatsapp", href: "https://wa.me/201281259262" },
   { type: "mail", href: "mailto:mohamedfarouk1994@gmail.com" },
-  // { type: "twitter", href: "https://twitter.com/yourhandle" },
-  // { type: "instagram", href: "https://instagram.com/yourhandle" },
+  { type: "twitter", href: "https://twitter.com/mohfarouk94" },
+  { type: "instagram", href: "https://instagram.com/mohfarouk94" },
 ];
