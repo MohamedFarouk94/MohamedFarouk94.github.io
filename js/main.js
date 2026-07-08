@@ -46,50 +46,60 @@
   });
 })();
 
-/* hero terminal — types out a short "whoami" sequence once on load */
+/* hero terminal */
 (function terminalTyping() {
+  const body = document.getElementById("terminal-typed")?.parentElement;
   const target = document.getElementById("terminal-typed");
-  if (!target) return;
+  if (!target || typeof TERMINAL_SESSION === "undefined") return;
 
-  const lines = [
-    { text: "Mohamed Farouk", cls: "k" },
-    { text: "ML Engineer · NLP Specialist · Python Developer" },
-  ];
+  let userScrolled = false;
+  body.addEventListener("scroll", () => {
+    const atBottom = body.scrollHeight - body.scrollTop - body.clientHeight < 20;
+    userScrolled = !atBottom;
+  });
 
-  let lineIndex = 0;
-  let charIndex = 0;
-  target.innerHTML = "";
+  function autoScroll() {
+    if (!userScrolled) body.scrollTop = body.scrollHeight;
+  }
 
-  function typeNext() {
-    if (lineIndex >= lines.length) {
-      target.insertAdjacentHTML("beforeend", '<span class="cursor"></span>');
-      return;
-    }
-    const line = lines[lineIndex];
-    if (charIndex === 0) {
+  let cmdIndex = 0;
+
+  function typeCommand() {
+    if (cmdIndex >= TERMINAL_SESSION.length) return;
+    const { prompt, output } = TERMINAL_SESSION[cmdIndex];
+    const lineId = `tline-${cmdIndex}`;
+
+    target.insertAdjacentHTML(
+      "beforeend",
+      `<div class="terminal__line"><span class="terminal__prompt">$</span><span class="terminal__output" id="${lineId}"></span></div>`
+    );
+    const span = document.getElementById(lineId);
+    let i = 0;
+    (function typePrompt() {
+      span.textContent = prompt.slice(0, i + 1);
+      autoScroll();
+      i++;
+      if (i < prompt.length) return setTimeout(typePrompt, 28);
+      setTimeout(printOutput, 200);
+    })();
+
+    function printOutput() {
       target.insertAdjacentHTML(
         "beforeend",
-        `<div class="terminal__line"><span class="terminal__output ${line.cls || ""}" id="tline-${lineIndex}"></span></div>`
+        `<div class="terminal__line"><span class="terminal__output k">${output.replace(/\n/g, "<br>")}</span></div>`
       );
-    }
-    const span = document.getElementById(`tline-${lineIndex}`);
-    span.textContent = line.text.slice(0, charIndex + 1);
-    charIndex++;
-    if (charIndex < line.text.length) {
-      setTimeout(typeNext, 28);
-    } else {
-      lineIndex++;
-      charIndex = 0;
-      setTimeout(typeNext, 220);
+      autoScroll();
+      cmdIndex++;
+      setTimeout(typeCommand, 500);
     }
   }
 
   const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   if (reduceMotion) {
-    target.innerHTML = lines
-      .map((l, i) => `<div class="terminal__line"><span class="terminal__output ${l.cls || ""}">${l.text}</span></div>`)
-      .join("");
+    target.innerHTML = TERMINAL_SESSION.map(
+      (c) => `<div class="terminal__line"><span class="terminal__prompt">$</span> ${c.prompt}</div><div class="terminal__line"><span class="terminal__output k">${c.output.replace(/\n/g, "<br>")}</span></div>`
+    ).join("");
   } else {
-    typeNext();
+    typeCommand();
   }
 })();

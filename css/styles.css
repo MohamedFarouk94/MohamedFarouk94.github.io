@@ -353,7 +353,18 @@ ul {
   padding: 1.4em 1.5em 1.6em;
   font-family: var(--font-mono);
   font-size: 0.88rem;
-  min-height: 13em;
+  height: 13em;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+}
+
+.terminal__body::-webkit-scrollbar {
+  width: 6px;
+}
+
+.terminal__body::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 3px;
 }
 
 .terminal__line {
