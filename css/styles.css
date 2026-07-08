@@ -740,18 +740,18 @@ ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 0.9em;
+  gap: 0.5em;
 }
 
 .contact-link {
   display: inline-flex;
   align-items: center;
   gap: 0.6em;
-  padding: 0.7em 1.1em;
+  padding: 0.55em 0.85em;
   border: 1px solid var(--border);
   border-radius: var(--radius-sm);
   font-family: var(--font-mono);
-  font-size: 0.82rem;
+  font-size: 0.75rem;
   color: var(--fg-strong);
   background: var(--surface);
 }
