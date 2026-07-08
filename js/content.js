@@ -16,20 +16,20 @@ const CURRENTLY = [
   {
     status: "active",
     title: "Stanford's LLM Curriculum",
-    detail: "Studying Stanford CME295 Transformers & LLMs full course.",
+    detail: "I'm currently self-studying the Stanford CME295 Transformers & LLMs full course. I believe it's the finest method to revisit the mathematical core of AI, which is something you may easily overlook by focusing just on high-level design.",
   },
    
   {
-    status: "paused",
-    title: "Chat with Data",
+    status: "active",
+    title: "Building ChatWithData",
     detail:
-      "An agentic system that holds an insightful conversation about a given dataset — reasoning over it, running code against it, and explaining what it finds.",
+      "I'm working on an agentic system that holds an insightful conversation about a given dataset — reasoning over it, running code against it, and explaining what it finds. I paused this project multiple times because of my master's study and other urgent works. I hope I can finish it soon!",
   },
    
   {
     status: "ongoing",
     title: "MSc, Mathematics & Computer Science",
-    detail: "Alexandria University, Faculty of Science, Department of Mathematics and Computer Science — Finishing my qualifying year and preparing for my preliminary year.",
+    detail: "I am currently pursuing a Master’s degree in Mathematics and Computer Science at Alexandria University (Faculty of Science, Department of Mathematics and Computer Science). I am finishing my qualifying year and preparing for the preparatory year, which is intended to be the final stage before commencing the research phase.",
   },
 ];
 
