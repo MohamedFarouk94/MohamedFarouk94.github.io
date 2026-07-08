@@ -5,7 +5,7 @@
 
 const TERMINAL_SESSION = [
   { prompt: "whoami", output: "mohamedfarouk" },
-  { prompt: "cat about.txt", output: "AI/ML Engineer · NLP Specialist · Python Developer . CS Researcher . Kaggle Participant . Former ACM-ICPC Contestant . Math Enthusiast" },
+  { prompt: "cat about.txt", output: "AI/ML Engineer · NLP Specialist\nPython Developer . CS Researcher\nKaggle Participant . Former ACM-ICPC Contestant\nMath Enthusiast" },
   { prompt: "git log --oneline -3", output: "a1c9f2e chatwithdata: agentic loop\nb7e0d31 jury: policy engine\nf42a108 phext: onnx export" },
 ];
 
