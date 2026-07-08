@@ -15,32 +15,25 @@ const TERMINAL_SESSION = [
 const CURRENTLY = [
   {
     status: "active",
-    title: "Fine-tuning Qwen2.5 for Reddit comment moderation",
-    detail:
-      "Kaggle competition — building a LoRA fine-tuning pipeline adapted from a prior Text-to-SQL project, pushing past a 0.566 ROC-AUC baseline.",
+    title: "Stanford's LLM Curriculum",
+    detail: "Studying Stanford CME295 Transformers & LLMs full course.",
   },
+   
   {
-    status: "active",
+    status: "paused",
     title: "Chat with Data",
     detail:
-      "Agentic conversational data-analysis system: LangChain + Groq driving a two-stage prompt loop over a sandboxed exec() environment.",
+      "An agentic system that holds an insightful conversation about a given dataset — reasoning over it, running code against it, and explaining what it finds.",
   },
-  {
-    status: "active",
-    title: "Shipping live demos",
-    detail:
-      "Deploying Hugging Face Spaces / Streamlit demos for existing projects so recruiters can try things, not just read about them.",
-  },
+   
   {
     status: "ongoing",
     title: "MSc, Mathematics & Computer Science",
-    detail: "Alexandria University — qualifying year.",
+    detail: "Alexandria University, Faculty of Science, Department of Mathematics and Computer Science — Finishing my qualifying year and preparing for my preliminary year.",
   },
 ];
 
-/* ---- Projects — anything with real code behind it.
-   A Kaggle link is fine to include alongside github/live —
-   it only becomes a "notebook" (below) when Kaggle is the ONLY link. */
+/* ---- Projects — anything with a GitHub link.*/
 const PROJECTS = [
   {
     name: "Jury",
@@ -53,6 +46,7 @@ const PROJECTS = [
       { type: "github", href: "https://github.com/MohamedFarouk94/jury" },
     ],
   },
+   
   {
     name: "AI Customer Support",
     tagline: "Natural-language support assistant",
@@ -66,6 +60,7 @@ const PROJECTS = [
       },
     ],
   },
+   
   {
     name: "Natural-Language Database Query System",
     tagline: "Ask your database a question",
@@ -83,6 +78,7 @@ const PROJECTS = [
       },
     ],
   },
+   
   {
     name: "Phext",
     tagline: "Search your gallery with text",
@@ -97,6 +93,7 @@ const PROJECTS = [
       },
     ],
   },
+   
   {
     name: "MultiAgent",
     tagline: "Multi-persona AI chat platform",
@@ -107,23 +104,7 @@ const PROJECTS = [
       { type: "github", href: "https://github.com/MohamedFarouk94/multiagent" },
     ],
   },
-  {
-    name: "ChatWithData",
-    tagline: "Conversational analysis over your dataset",
-    description:
-      "An agentic system that holds an insightful conversation about a given dataset — reasoning over it, running code against it, and explaining what it finds. (In progress.)",
-    stack: ["LLM", "RAG", "LangChain", "Machine Learning", "Sandboxed Execution"],
-    links: [
-      {
-        type: "github",
-        href: "https://github.com/MohamedFarouk94/chatwithdata",
-      },
-      {
-        type: "kaggle",
-        href: "https://www.kaggle.com/code/mohamedfarouk94/chat-with-data",
-      },
-    ],
-  },
+   
   {
     name: "PyChot",
     tagline: "Real-time chat server & client",
@@ -134,6 +115,7 @@ const PROJECTS = [
       { type: "github", href: "https://github.com/MohamedFarouk94/Pychot" },
     ],
   },
+   
   {
     name: "Amazon Ally",
     tagline: "Amazon product search & scrape",
@@ -159,6 +141,7 @@ const NOTEBOOKS = [
     stack: ["Monte Carlo", "Data Preprocessing", "Machine Learning", "Statistical Models"],
     href: "https://www.kaggle.com/code/mohamedfarouk94/wave-your-flag-predicting-fifa-world-cup-2026",
   },
+   
   {
     name: "Movie Recommender System",
     description:
@@ -166,6 +149,7 @@ const NOTEBOOKS = [
     stack: ["Recommender Systems", "Data Preprocessing", "Machine Learning"],
     href: "https://www.kaggle.com/code/mohamedfarouk94/the-movie-recommender-system",
   },
+   
   {
     name: "Contexto Solver",
     description:
@@ -203,10 +187,7 @@ const SKILLS = [
   { group: "Deployment", items: ["Docker", "REST APIs", "Cloud Computing"] },
 ];
 
-/* ---- Contact / related links — all rendered in one row.
-   type controls icon + color; add more by copying a line and
-   changing type/href. Supported types: mail, whatsapp, github,
-   linkedin, upwork, kaggle, credly, resume, twitter, instagram */
+/* ---- Contact / related links — all rendered in one row. */
 const CONTACT_LINKS = [
   { type: "resume", href: "https://drive.google.com/file/d/15UtTzZOFZgllUXe3Ia06lhF5_cwfmMdm/view" },
   { type: "github", href: "https://github.com/MohamedFarouk94/" },
