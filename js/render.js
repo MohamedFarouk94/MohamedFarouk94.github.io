@@ -31,6 +31,7 @@ const LABELS = {
   twitter: "Twitter",
   instagram: "Instagram",
   live: "Live",
+  sdk: "SDK",
 };
 
 function renderCurrently() {
