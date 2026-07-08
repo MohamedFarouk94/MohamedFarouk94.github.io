@@ -52,6 +52,7 @@ const PROJECTS = [
     links: [
       { type: "live", href: "https://jury-livid.vercel.app/" },
       { type: "github", href: "https://github.com/MohamedFarouk94/jury" },
+      { type: "sdk", href: "https://github.com/MohamedFarouk94/jury/tree/master/sdk"}
     ],
   },
    
