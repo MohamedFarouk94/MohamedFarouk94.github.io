@@ -514,6 +514,16 @@ ul {
   margin-bottom: 0.9em;
 }
 
+.now-card p {
+  font-size: 0.92rem;
+  color: var(--fg);
+  margin-bottom: 0.6em;
+}
+
+.now-card p:last-child {
+  margin-bottom: 0;
+}
+
 .now-card__status .dot {
   width: 0.5em;
   height: 0.5em;

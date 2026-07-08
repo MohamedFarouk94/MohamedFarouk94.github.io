@@ -16,20 +16,28 @@ const CURRENTLY = [
   {
     status: "active",
     title: "Stanford's LLM Curriculum",
-    detail: "I'm currently self-studying the Stanford CME295 Transformers & LLMs full course.<br>I believe it's the finest method to revisit the mathematical core of AI, which is something you may easily overlook by focusing just on high-level design.",
+    detail: [
+      "I'm currently self-studying the Stanford CME295 Transformers & LLMs full course.",
+      "I believe it's the finest method to revisit the mathematical core of AI, which is something you may easily overlook by focusing just on high-level design."
+    ]
   },
    
   {
     status: "active",
     title: "Building ChatWithData",
-    detail:
-      "I'm working on an agentic system that holds an insightful conversation about a given dataset, reasoning over it, running code against it, and explaining what it finds.<br>I paused this project multiple times because of my master's study and other urgent works. I hope I can finish it soon!",
+    detail: [
+      "I'm working on an agentic system that holds an insightful conversation about a given dataset, reasoning over it, running code against it, and explaining what it finds.",
+      "I paused this project multiple times because of my master's study and other urgent works. I hope I can finish it soon!"
+    ]
   },
    
   {
     status: "ongoing",
     title: "MSc, Mathematics & Computer Science",
-    detail: "I am pursuing a Master’s degree in Mathematics and Computer Science at Alexandria University (Faculty of Science, Department of Mathematics and Computer Science).<br>I'm currently finishing my qualifying year and preparing for the preparatory year, which is intended to be the final stage before commencing the research phase.",
+    detail: [
+      "I am pursuing a Master’s degree in Mathematics and Computer Science at Alexandria University (Faculty of Science, Department of Mathematics and Computer Science).",
+      "I'm currently finishing my qualifying year and preparing for the preparatory year, which is intended to be the final stage before commencing the research phase."
+    ]
   },
 ];
 

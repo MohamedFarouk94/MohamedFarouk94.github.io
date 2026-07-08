@@ -37,13 +37,14 @@ function renderCurrently() {
   el.innerHTML = CURRENTLY.map((item) => {
     const statusClass = item.status === "active" ? "" : "is-ongoing";
     const label = item.status === "active" ? "in progress" : item.status;
+    const paragraphs = Array.isArray(item.detail) ? item.detail : [item.detail];
     return `
       <article class="now-card">
         <div class="now-card__status ${statusClass}">
           <span class="dot"></span>${label}
         </div>
         <h3>${item.title}</h3>
-        <p>${item.detail}</p>
+        ${paragraphs.map((p) => `<p>${p}</p>`).join("")}
       </article>`;
   }).join("");
 }
