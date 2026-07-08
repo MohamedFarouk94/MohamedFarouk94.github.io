@@ -16,6 +16,7 @@ const ICONS = {
   twitter: "fa-brands fa-x-twitter",
   instagram: "fa-brands fa-instagram",
   live: "fa-solid fa-arrow-up-right-from-square",
+  sdk: "fa-brands fa-python"
 };
 
 const LABELS = {
