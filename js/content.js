@@ -4,7 +4,9 @@
    ============================================================ */
 
 const TERMINAL_SESSION = [
-  { prompt: "whoami", output: "mohamedfarouk" },
+  { prompt: "whoami", output: "mohamedfarouk" }, 
+  { prompt: "pwd", output: "mohamedfarouk94.github.io"},
+  { prompt: "git remote -v", output: 'origin <a href="https://github.com/MohamedFarouk94/MohamedFarouk94.github.io" target="_blank" rel="noopener">github.com/MohamedFarouk94/MohamedFarouk94.github.io</a>'},
   { prompt: "cat about.txt", output: "AI/ML Engineer · NLP Specialist\nPython Developer . CS Researcher\nKaggle Participant . Former ACM-ICPC Contestant\nMath Enthusiast" },
   { prompt: "git log --oneline -3", output: "a1c9f2e chatwithdata: agentic loop\nb7e0d31 jury: policy engine\nf42a108 phext: onnx export" },
 ];
