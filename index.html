@@ -3,537 +3,227 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Portfolio" />
+    <meta name="description" content="Mohamed Farouk — ML Engineer, NLP Specialist, Python Developer." />
 
     <meta property="og:title" content="Mohamed Farouk – ML Engineer & NLP Specialist" />
-    <meta property="og:description" content="Portfolio site showcasing NLP, ML, and backend projects by Mohamed Farouk." />
-    <meta property="og:image" content="https://mohamedfarouk94.github.io/preview.png" />
+    <meta property="og:description" content="Portfolio showcasing NLP, ML, and backend projects by Mohamed Farouk." />
     <meta property="og:url" content="https://mohamedfarouk94.github.io/" />
     <meta property="og:type" content="website" />
 
-    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:card" content="summary" />
     <meta name="twitter:title" content="Mohamed Farouk – ML Engineer & NLP Specialist" />
-    <meta name="twitter:description" content="Portfolio site showcasing NLP, ML, and backend projects by Mohamed Farouk." />
-    <meta name="twitter:image" content="https://mohamedfarouk94.github.io/preview.png" />
+    <meta name="twitter:description" content="Portfolio showcasing NLP, ML, and backend projects by Mohamed Farouk." />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="icon" type="image/png" href="favicon.png" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
     <link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-/>
-
-    <link rel="stylesheet" href="styles.css" />
-    <title>Mohamed Farouk</title>
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Mohamed Farouk — ML Engineer</title>
   </head>
-  <body class="light" id="top">
-    <header class="header center">
-      <h3>
-        <a href="https://github.com/MohamedFarouk94/MohamedFarouk94.github.io" target="_blank" class="link"
-          >MF.</a
-        >
-      </h3>
 
-      <nav class="nav center">
-        <ul class="nav__list center">
-          <li class="nav__list-item">
-            <a class="link link--nav" href="#about">About</a>
-          </li>
-          <li class="nav__list-item">
-            <a class="link link--nav" href="#projects">Projects</a>
-          </li>
-          <li class="nav__list-item">
-            <a class="link link--nav" href="#skills">Skills</a>
-          </li>
-          <li class="nav__list-item">
-            <a class="link link--nav" href="#contact">Contact</a>
-          </li>
-        </ul>
+  <body class="dark" id="top">
+    <!-- ============================== HEADER / NAV ============================== -->
+    <header class="site-header">
+      <div class="wrap header-row">
+        <a href="#top" class="logo"><span class="dot"></span>mfarouk</a>
 
-        <button type="button" aria-label="toggle theme" class="btn btn--icon">
-          <i aria-hidden="true" id="btn-theme" class="fas fa-moon"></i>
-        </button>
+        <nav class="nav">
+          <ul class="nav__list" id="nav-list">
+            <li class="nav__list-item"><a class="nav__link" href="#about">about</a></li>
+            <li class="nav__list-item"><a class="nav__link" href="#currently">currently</a></li>
+            <li class="nav__list-item"><a class="nav__link" href="#projects">projects</a></li>
+            <li class="nav__list-item"><a class="nav__link" href="#notebooks">notebooks</a></li>
+            <li class="nav__list-item"><a class="nav__link" href="#skills">skills</a></li>
+            <li class="nav__list-item"><a class="nav__link" href="#contact">contact</a></li>
+          </ul>
 
-        <button
-          type="button"
-          aria-label="toggle navigation"
-          class="btn btn--icon nav__hamburger"
-        >
-          <i aria-hidden="true" class="fas fa-bars"></i>
-        </button>
-      </nav>
+          <button type="button" class="icon-btn" id="btn-theme" aria-label="Toggle theme">
+            <i class="fas fa-sun" aria-hidden="true"></i>
+          </button>
+          <button type="button" class="icon-btn nav__hamburger" id="btn-hamburger" aria-label="Toggle navigation">
+            <i class="fas fa-bars" aria-hidden="true"></i>
+          </button>
+        </nav>
+      </div>
     </header>
 
     <main>
-      <!-- Image -->
-      <div class="centered-image">
-    <img src="https://i.ibb.co/DgDrpnmN/portfolio-image2.png" alt="Portfolio Image">
-    </div>
-      <!-- About -->
-      <div class="about center" id="about">
-        <h1 class="about__role">Hi, I'm <span class="about__name">Mohamed Farouk.</span></h1>
-        <h2 class="about__role">ML Engineer | NLP Specialist | Python Developer</h2>
-        <h3 class="about__role">Who Am I?</h3>
-        <p class="about__desc">
-          I’m Mohamed Farouk, a Machine Learning Engineer with a strong passion for building intelligent systems that solve real-world problems.<br><br>
-          I'm a Computer Engineering graduate, currently pursuing a Master's degree in Mathematics and Computer Science. I also got Machine Learning training in AWS Academy.<br><br>
-          I specialize in Natural Language Processing (NLP), backend integration, and deploying scalable ML pipelines.<br><br>
-          I have strong background in Machine Learning in general, from traditional ML and statistical models to the newest trends and cutting-edge solutions.<br><br>
-          My journey blends deep technical skills in Python where I build ML apps, automation pipelines, Monte Carlo simulations, customized tools and whole integreted systems. I also use C/C++ whnever computation efficiency is my priority.<br><br>
-          Beside being my job, coding is also one of my hobbies. I'm a former ACM-ICPC contestant, and a current Kaggle participant.<br><br>
-          Whether I’m fine-tuning large language models, constructing RAG systems, or building full-stack AI applications, I always focus on delivering solutions that are both technically sound and practically impactful.<br><br>
-          My work philosophy is rooted in curiosity, enjoying what I do, earning knowledge, finding deep meaning in theory, and making AI accessible and usable in practice.<br><br>
-        </p>
-        <h3 class="about__role">What Can I Do for You?</h3>
-        <p class="about__desc">
-  <strong>Build NLP-Powered Applications:</strong> I develop end-to-end NLP solutions using modern LLM techniques like RAG, prompt engineering, and fine-tuning. Need a chatbot, a semantic search engine, or a Text-to-SQL translator? I can bring it to life with speed and accuracy.<br><br>
-  
-  <strong>Deploy Machine Learning Models to Production:</strong> I use Docker and cloud servers to deploy optimized models for real-time or batch inference with low latency and high scalability.<br><br>
-  
-  <strong>Optimize and Fine-Tune Models Efficiently:</strong> From LoRA and quantization to pruning and memory optimization, I specialize in making large models run fast and cheap—without sacrificing performance.<br><br>
-  
-  <strong>Automate Data Pipelines and Scraping Workflows:</strong> I build robust web scraping solutions and automate your data ingestion and cleaning pipelines, ensuring clean, structured data for ML pipelines.<br><br>
-  
-  <strong>Integrate ML with Your Backend or Product:</strong> I can bridge your ML needs with real-world interfaces—integrating with REST APIs, user authentication, or your existing tech stack using Django, Flask, or FastAPI.<br><br>
-
-  <strong>Create Customized Tools and User-Specific Products:</strong> Very specific requirements? A certain complex algorithm? A simulation or a an unusual problem waiting to be solved? I can provide the exact solution you want.        
-</p>
-        <h6 class="about__role">Check My Resume, GitHub and Credly</h6>
-      </div>
-
-      <section class="section contact center">
-  <div class="btn-row">
-    <a href="https://drive.google.com/file/d/15UtTzZOFZgllUXe3Ia06lhF5_cwfmMdm/view" target="_blank">
-      <span class="btn btn--outline">Resume</span>
-    </a>
-    <a href="https://github.com/MohamedFarouk94/" target="_blank">
-      <span class="btn btn--outline">GitHub</span>
-    </a>
-    <a href="https://www.credly.com/users/mohamed-farouk.87e6e0b3/badges#credly" target="_blank">
-      <span class="btn btn--outline">Credly</span>
-    </a>
-  </div>
-</section>
-
-      <!-- Projects -->
-      <section id="projects" class="section projects">
-        <h2 class="section__title">Projects</h2>
-
-        <div class="projects__grid">
-
-          <div class="project">
-            <h3>Jury: AI-Powered Content Moderation</h3>
-            <p class="project__description">
-              AI-powered content moderation that let you define policies, add rules, check contents and get their verdicts.
-            </p>
-            <ul class="project__stack">
-              <li class="project__stack-item">LLM</li>
-              <li class="project__stack-item">LangChain</li>
-              <li class="project__stack-item">FastAPI</li>
-              <li class="project__stack-item">JavaScript Vanilla</li>
-              <li class="project__stack-item">Docker</li>
-              <li class="project__stack-item">Hugging Face Spaces</li>
-              <li class="project__stack-item">Vercel</li>
-            </ul>
-
-            <a
-              href="https://jury-livid.vercel.app/" target="_blank"
-              aria-label="source code"
-              class="link link--icon"
-            >
-              <i aria-hidden="true" class="fa-solid fa-arrow-up-right-from-square"></i>
-            </a>
-            
-            <a
-              href="https://github.com/MohamedFarouk94/jury" target="_blank"
-              aria-label="source code"
-              class="link link--icon"
-            >
-              <i aria-hidden="true" class="fab fa-github"></i>
-            </a>
-          </div>
-          
-          <div class="project">
-            <h3>AI Customer Support</h3>
-            <p class="project__description">
-              An AI-driven support assistant that interacts with users in natural language, resolving customer queries based on a custom-built local knowledge base.
-            </p>
-            <ul class="project__stack">
-              <li class="project__stack-item">LLM</li>
-              <li class="project__stack-item">RAG</li>
-              <li class="project__stack-item">LangChain</li>
-            </ul>
-
-            <a
-              href="https://github.com/MohamedFarouk94/AI-customer-support" target="_blank"
-              aria-label="source code"
-              class="link link--icon"
-            >
-              <i aria-hidden="true" class="fab fa-github"></i>
-            </a>
-          </div>
-          
-          <div class="project">
-            <h3>Natural-Language Database Query System</h3>
-            <p class="project__description">
-                A local natural-language database query system that translates questions into SQL and retrieves real data.</p>
-            <ul class="project__stack">
-              <li class="project__stack-item">Transfer Learning</li>
-              <li class="project__stack-item">Model Optimization</li>
-              <li class="project__stack-item">LLM</li>
-              <li class="project__stack-item">LangChain</li>
-              <li class="project__stack-item">SQL</li>
-            </ul>
-
-            <a
-              href="https://github.com/MohamedFarouk94/Natural-Language-Database-Queries" target="_blank"
-              aria-label="source code"
-              class="link link--icon"
-            >
-              <i aria-hidden="true" class="fab fa-github"></i>
-            </a>
-            <a
-              href="https://www.kaggle.com/code/mohamedfarouk94/ai-powered-postgresql" target="_blank"
-              aria-label="live preview"
-              class="link link--icon"
-            >
-              <i aria-hidden="true" class="fa-brands fa-kaggle"></i>
-            </a>
+      <!-- ============================== HERO ============================== -->
+      <section class="hero">
+        <div class="wrap hero__grid">
+          <div>
+            <div class="hero__kicker">Alexandria, Egypt</div>
+            <h1>Building intelligent systems that <span class="accent">actually ship.</span></h1>
+            <div class="hero__role">ML Engineer · NLP Specialist · Python Developer</div>
+            <div class="hero__actions">
+              <a class="btn btn--primary" href="#projects">See the work</a>
+              <a class="btn btn--outline" href="#contact">Get in touch</a>
+            </div>
           </div>
 
-          <div class="project">
-            <h3>Phext: Search Your Gallery with Text!</h3>
-            <p class="project__description">
-              An AI-powered search engine to find photos in your gallery by a text description.
-            </p>
-            <ul class="project__stack">
-              <li class="project__stack-item">Embedding</li>
-              <li class="project__stack-item">Similarity Search</li>
-              <li class="project__stack-item">Model Optimization</li>
-              <li class="project__stack-item">ONNX</li>
-            </ul>
-
-            <a
-              href="https://github.com/MohamedFarouk94/phext" target="_blank"
-              aria-label="source code"
-              class="link link--icon"
-            >
-              <i aria-hidden="true" class="fab fa-github"></i>
-            </a>
-
-             <a
-              href="https://www.kaggle.com/code/mohamedfarouk94/phext-search-photos-with-text" target="_blank"
-              aria-label="live preview"
-              class="link link--icon"
-            >
-              <i aria-hidden="true" class="fa-brands fa-kaggle"></i>
-            </a>
-            
+          <div class="terminal" aria-hidden="true">
+            <div class="terminal__bar">
+              <span></span><span></span><span></span>
+              <span class="terminal__title">guest@portfolio — zsh</span>
+            </div>
+            <div class="terminal__body">
+              <div class="terminal__line">
+                <span class="terminal__prompt">$</span>
+                <span class="terminal__output">whoami</span>
+              </div>
+              <div id="terminal-typed"></div>
+            </div>
           </div>
-
-          <div class="project">
-            <h3>MultiAgent</h3>
-            <p class="project__description">
-              AI Chat platform supporting text and audio messages, and allows users to create multiple agents with different instructions/persona 
-            </p>
-            <ul class="project__stack">
-              <li class="project__stack-item">LLM</li>
-              <li class="project__stack-item">LangChain</li>
-              <li class="project__stack-item">FastAPI</li>
-              <li class="project__stack-item">JavaScript Vanilla</li>
-              <li class="project__stack-item">Docker</li>
-            </ul>
-
-            <a
-              href="https://github.com/MohamedFarouk94/multiagent" target="_blank"
-              aria-label="source code"
-              class="link link--icon"
-            >
-              <i aria-hidden="true" class="fab fa-github"></i>
-            </a>
-            
-          </div>
-          
-          <div class="project">
-            <h3>ChatWithData</h3>
-            <p class="project__description">
-              An agentic system that could give an insightful conversation about a given dataset. (IN PROGRESS)
-            </p>
-            <ul class="project__stack">
-              <li class="project__stack-item">LLM</li>
-              <li class="project__stack-item">RAG</li>
-              <li class="project__stack-item">LangChain</li>
-              <li class="project__stack-item">Machine Learning</li>
-              <li class="project__stack-item">Custom Sandbox Execution</li>
-            </ul>
-
-            <a
-              href="https://github.com/MohamedFarouk94/chatwithdata" target="_blank"
-              aria-label="source code"
-              class="link link--icon"
-            >
-              <i aria-hidden="true" class="fab fa-github"></i>
-            </a>
-
-             <a
-              href="https://www.kaggle.com/code/mohamedfarouk94/chat-with-data" target="_blank"
-              aria-label="live preview"
-              class="link link--icon"
-            >
-              <i aria-hidden="true" class="fa-brands fa-kaggle"></i>
-            </a>
-            
-          </div>
-
-          <div class="project">
-            <h3>PyChot: Chat Server/Client</h3>
-            <p class="project__description">
-              A lightweight chat server-client application features real-time messaging, authentication and a simple GUI.
-            </p>
-            <ul class="project__stack">
-              <li class="project__stack-item">Web Sockets</li>
-              <li class="project__stack-item">REST API</li>
-              <li class="project__stack-item">Django</li>
-              <li class="project__stack-item">Django Channels</li>
-              <li class="project__stack-item">Tkinter</li>
-            </ul>
-
-            <a
-              href="https://github.com/MohamedFarouk94/Pychot" target="_blank"
-              aria-label="source code"
-              class="link link--icon"
-            >
-              <i aria-hidden="true" class="fab fa-github"></i>
-            </a>
-          </div>
-
-          <div class="project">
-            <h3>2026 FIFA World Cup Simulation</h3>
-            <p class="project__description">
-              Monte Carlo simulation to expect the outcome of 2026 FIFA World cup.
-            </p>
-            <ul class="project__stack">
-              <li class="project__stack-item">Monte Carlo Simulation</li>
-              <li class="project__stack-item">Data Preprocessing</li>
-              <li class="project__stack-item">Machine Learning</li>
-              <li class="project__stack-item">Statistical Models</li>
-            </ul>
-
-             <a
-              href="https://www.kaggle.com/code/mohamedfarouk94/wave-your-flag-predicting-fifa-world-cup-2026" target="_blank"
-              aria-label="live preview"
-              class="link link--icon"
-            >
-              <i aria-hidden="true" class="fa-brands fa-kaggle"></i>
-            </a>
-          </div>
-
-          <div class="project">
-            <h3>Movie Recommender System</h3>
-            <p class="project__description">
-              A hybrid model of content based, rating based and collaborative filtering models. Involving heavy data processing and
-cleaning.
-            </p>
-            <ul class="project__stack">
-              <li class="project__stack-item">Recommender System</li>
-              <li class="project__stack-item">Data Preprocessing</li>
-              <li class="project__stack-item">Machine Learning</li>
-            </ul>
-
-             <a
-              href="https://www.kaggle.com/code/mohamedfarouk94/the-movie-recommender-system" target="_blank"
-              aria-label="live preview"
-              class="link link--icon"
-            >
-              <i aria-hidden="true" class="fa-brands fa-kaggle"></i>
-            </a>
-          </div>
-
-          <div class="project">
-            <h3>Contexto Solver</h3>
-            <p class="project__description">
-              Implementing several algorithms to solve the game "Contexto".
-            </p>
-            <ul class="project__stack">
-              <li class="project__stack-item">Reinforcement Learning</li>
-              <li class="project__stack-item">Information Theory</li>
-              <li class="project__stack-item">NLP</li>
-            </ul>
-
-             <a
-              href="https://www.kaggle.com/code/mohamedfarouk94/let-s-make-a-guess-contexto-solver" target="_blank"
-              aria-label="live preview"
-              class="link link--icon"
-            >
-              <i aria-hidden="true" class="fa-brands fa-kaggle"></i>
-            </a>
-          </div>
-
-          <div class="project">
-            <h3>Amazon Ally</h3>
-            <p class="project__description">
-              An application to search, scrape and collect data of Amazon products. Personal and research use only.  
-            </p>
-            <ul class="project__stack">
-              <li class="project__stack-item">Web Scraping</li>
-              <li class="project__stack-item">Selenium</li>
-              <li class="project__stack-item">Tkinter</li>
-            </ul>
-
-            <a
-              href="https://github.com/MohamedFarouk94/amazon-scraper" target="_blank"
-              aria-label="source code"
-              class="link link--icon"
-            >
-              <i aria-hidden="true" class="fab fa-github"></i>
-            </a>
-          </div>
-          
         </div>
       </section>
 
-      <!-- Skills -->
+      <!-- ============================== ABOUT =============================
+           Text below is kept unchanged per request — only the markup
+           around it is new. Edit the paragraphs directly here. ============ -->
+      <section class="section about" id="about">
+        <div class="wrap">
+          <div class="section-head">
+            <div class="eyebrow">about</div>
+            <h2>Who I am, and how I can help</h2>
+          </div>
+
+          <div class="about__columns">
+            <div class="about__body">
+              <h3>Who Am I?</h3>
+              <p>
+                I'm Mohamed Farouk, a Machine Learning Engineer with a strong passion for building intelligent systems that solve real-world problems.
+              </p>
+              <p>
+                I'm a Computer Engineering graduate, currently pursuing a Master's degree in Mathematics and Computer Science. I also got Machine Learning training in AWS Academy.
+              </p>
+              <p>
+                I specialize in Natural Language Processing (NLP), backend integration, and deploying scalable ML pipelines.
+              </p>
+              <p>
+                I have strong background in Machine Learning in general, from traditional ML and statistical models to the newest trends and cutting-edge solutions.
+              </p>
+              <p>
+                My journey blends deep technical skills in Python where I build ML apps, automation pipelines, Monte Carlo simulations, customized tools and whole integreted systems. I also use C/C++ whnever computation efficiency is my priority.
+              </p>
+              <p>
+                Beside being my job, coding is also one of my hobbies. I'm a former ACM-ICPC contestant, and a current Kaggle participant.
+              </p>
+              <p>
+                Whether I'm fine-tuning large language models, constructing RAG systems, or building full-stack AI applications, I always focus on delivering solutions that are both technically sound and practically impactful.
+              </p>
+              <p>
+                My work philosophy is rooted in curiosity, enjoying what I do, earning knowledge, finding deep meaning in theory, and making AI accessible and usable in practice.
+              </p>
+            </div>
+
+            <div class="about__body">
+              <h3>What Can I Do for You?</h3>
+              <p>
+                <strong>Build NLP-Powered Applications:</strong> I develop end-to-end NLP solutions using modern LLM techniques like RAG, prompt engineering, and fine-tuning. Need a chatbot, a semantic search engine, or a Text-to-SQL translator? I can bring it to life with speed and accuracy.
+              </p>
+              <p>
+                <strong>Deploy Machine Learning Models to Production:</strong> I use Docker and cloud servers to deploy optimized models for real-time or batch inference with low latency and high scalability.
+              </p>
+              <p>
+                <strong>Optimize and Fine-Tune Models Efficiently:</strong> From LoRA and quantization to pruning and memory optimization, I specialize in making large models run fast and cheap—without sacrificing performance.
+              </p>
+              <p>
+                <strong>Automate Data Pipelines and Scraping Workflows:</strong> I build robust web scraping solutions and automate your data ingestion and cleaning pipelines, ensuring clean, structured data for ML pipelines.
+              </p>
+              <p>
+                <strong>Integrate ML with Your Backend or Product:</strong> I can bridge your ML needs with real-world interfaces—integrating with REST APIs, user authentication, or your existing tech stack using Django, Flask, or FastAPI.
+              </p>
+              <p>
+                <strong>Create Customized Tools and User-Specific Products:</strong> Very specific requirements? A certain complex algorithm? A simulation or a an unusual problem waiting to be solved? I can provide the exact solution you want.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================== CURRENTLY ==============================
+           Edit CURRENTLY in js/content.js — meant to be updated often. ========== -->
+      <section class="section currently" id="currently">
+        <div class="wrap">
+          <div class="section-head">
+            <div class="eyebrow">currently</div>
+            <h2>What I'm working on right now</h2>
+          </div>
+          <div class="currently__grid" id="currently-grid"></div>
+        </div>
+      </section>
+
+      <!-- ============================== PROJECTS ==============================
+           Edit PROJECTS in js/content.js. ======================================= -->
+      <section class="section projects" id="projects">
+        <div class="wrap">
+          <div class="section-head">
+            <div class="eyebrow">projects</div>
+            <h2>Things I've built end-to-end</h2>
+          </div>
+          <div class="projects__grid" id="projects-grid"></div>
+        </div>
+      </section>
+
+      <!-- ============================== NOTEBOOKS ==============================
+           Kaggle-only work lives here, kept separate from Projects.
+           Edit NOTEBOOKS in js/content.js. ======================================= -->
+      <section class="section notebooks" id="notebooks">
+        <div class="wrap">
+          <div class="section-head">
+            <div class="eyebrow">notebooks</div>
+            <h2>Kaggle notebooks & experiments</h2>
+          </div>
+          <div class="notebooks__grid" id="notebooks-grid"></div>
+        </div>
+      </section>
+
+      <!-- ============================== SKILLS ==============================
+           Edit SKILLS in js/content.js. ======================================= -->
       <section class="section skills" id="skills">
-  <h2 class="section__title">Skills</h2>
+        <div class="wrap">
+          <div class="section-head">
+            <div class="eyebrow">skills</div>
+            <h2>Tools I reach for</h2>
+          </div>
+          <div class="skills__groups" id="skills-groups"></div>
+        </div>
+      </section>
 
-  <!-- Programming Languages -->
-  <ul class="skills__list">
-    <li class="skills__list-item btn btn--plain">Python (Advanced)</li>
-    <li class="skills__list-item btn btn--plain">C/C++</li>
-    <li class="skills__list-item btn btn--plain">MATLAB/Octave</li>
-    <li class="skills__list-item btn btn--plain">SQL</li>
-    <li class="skills__list-item btn btn--plain">JavaScript</li>
-  </ul>
-  <br>
-
-  <!-- Data Processing & Web Scraping -->
-  <ul class="skills__list">
-    <li class="skills__list-item btn btn--plain">Pandas</li>
-    <li class="skills__list-item btn btn--plain">NumPy</li>
-    <li class="skills__list-item btn btn--plain">SciPy</li>
-  </ul>
-  <br>
-
-  <!-- Machine Learning -->
-  <ul class="skills__list">
-    <li class="skills__list-item btn btn--plain">scikit-learn</li>
-    <li class="skills__list-item btn btn--plain">TensorFlow</li>
-    <li class="skills__list-item btn btn--plain">PyTorch</li>
-    <li class="skills__list-item btn btn--plain">XGBoost</li>
-    <li class="skills__list-item btn btn--plain">CatBoost</li>
-    <li class="skills__list-item btn btn--plain">LightGBM</li>
-  </ul>
-  <br>
-
-  <!-- Autmoation -->
-  <ul class="skills__list">
-    <li class="skills__list-item btn btn--plain">LangChain</li>
-    <li class="skills__list-item btn btn--plain">LangGraph</li>
-    <li class="skills__list-item btn btn--plain">Ollama</li>
-  </ul>
-  <br>
-
-  <!-- Model Optimization -->
-  <ul class="skills__list">
-    <li class="skills__list-item btn btn--plain">Fine-tuning</li>
-    <li class="skills__list-item btn btn--plain">Transfer Learning</li>
-    <li class="skills__list-item btn btn--plain">Model Quantization</li>
-    <li class="skills__list-item btn btn--plain">Model Pruning</li>
-  </ul>
-  <br>
-
-  <!-- Backend Development -->
-  <ul class="skills__list">
-    <li class="skills__list-item btn btn--plain">Django</li>
-    <li class="skills__list-item btn btn--plain">Django REST Framework</li>
-    <li class="skills__list-item btn btn--plain">Django Channels</li>
-    <li class="skills__list-item btn btn--plain">Flask</li>
-    <li class="skills__list-item btn btn--plain">FastAPI</li>
-  </ul>
-  <br>
-
-  <!-- Web Scraping -->
-  <ul class="skills__list">
-    <li class="skills__list-item btn btn--plain">Requests</li>
-    <li class="skills__list-item btn btn--plain">Selenium</li>
-    <li class="skills__list-item btn btn--plain">BeautifulSoup</li>
-    <li class="skills__list-item btn btn--plain">Scrapling</li>
-  </ul>
-  <br>
-
-  <!-- Others -->
-  <ul class="skills__list">
-    <li class="skills__list-item btn btn--plain">Advanced OOP</li>
-    <li class="skills__list-item btn btn--plain">Monte-Carlo Simulation</li>
-    <li class="skills__list-item btn btn--plain">Advanced Alogrithms</li>
-    <li class="skills__list-item btn btn--plain">Automation</li>
-  </ul>
-  <br>
-
-  <!-- Deployment & Cloud -->
-  <ul class="skills__list">
-    <li class="skills__list-item btn btn--plain">Docker</li>
-    <li class="skills__list-item btn btn--plain">REST APIs</li>
-    <li class="skills__list-item btn btn--plain">Cloud Computing</li>
-  </ul>
-
-</section>
-
-
-      <!-- Contact -->
-      <section class="section contact center" id="contact">
-  <h2 class="section__title">Contact Me</h2>
-  <div class="btn-row">
-     <a
-              href="mailto:mohamedfarouk1994@gmail.com" target="_blank"
-              aria-label="live preview"
-              class="link link--icon"
-            >
-              <i aria-hidden="true" class="fa-solid fa-envelope"></i>
-            </a>
-    <a
-              href="https://wa.me/201281259262" target="_blank"
-              aria-label="live preview"
-              class="link link--icon"
-            >
-              <i aria-hidden="true" class="fa-brands fa-whatsapp"></i>
-            </a>
-     <a
-              href="https://www.linkedin.com/in/mohfarouk94/" target="_blank"
-              aria-label="live preview"
-              class="link link--icon"
-            >
-              <i aria-hidden="true" class="fa-brands fa-linkedin"></i>
-            </a>
-    <a
-              href="https://www.upwork.com/freelancers/~010a4765fdccc37961" target="_blank"
-              aria-label="live preview"
-              class="link link--icon"
-            >
-              <i aria-hidden="true" class="fa-brands fa-upwork"></i>
-            </a>
-  </div>
-</section>
-
+      <!-- ============================== CONTACT ==============================
+           Edit CONTACT_LINKS in js/content.js. ================================= -->
+      <section class="section contact" id="contact">
+        <div class="wrap">
+          <div class="section-head">
+            <div class="eyebrow">contact</div>
+            <h2>Let's talk</h2>
+            <p class="contact__lead">
+              Open to full-time roles, contract work, and interesting problems in general. Reach me on whichever of these you prefer.
+            </p>
+          </div>
+          <div class="contact__row" id="contact-row"></div>
+        </div>
+      </section>
     </main>
 
-    <div class="scroll-container">
-      <div class="scroll-top">
-        <a aria-label="Scroll up" href="#top">
-          <i aria-hidden="true" class="fas fa-arrow-up"></i>
-        </a>
-      </div>
-    </div>
+    <a href="#top" class="scroll-top" id="scroll-top" aria-label="Scroll to top">
+      <i class="fas fa-arrow-up" aria-hidden="true"></i>
+    </a>
 
-    <footer>
-      <br>
+    <footer class="site-footer">
+      <div class="wrap">Mohamed Farouk — built with plain HTML, CSS &amp; JS.</div>
     </footer>
 
-    <script src="./script.js"></script>
+    <script src="js/content.js"></script>
+    <script src="js/render.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
