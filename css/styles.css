@@ -373,6 +373,10 @@ ul {
   margin-bottom: 0.5em;
 }
 
+.terminal__line:has(.terminal__output.k) {
+  margin-bottom: 1.1em;
+}
+
 .terminal__prompt {
   color: var(--accent-2);
   flex-shrink: 0;
