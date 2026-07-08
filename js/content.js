@@ -178,7 +178,7 @@ const SKILLS = [
   { group: "LLM Tooling", items: ["LangChain", "LangGraph", "Ollama"] },
   {
     group: "Model Optimization",
-    items: ["Fine-tuning", "Transfer Learning", "Quantization", "Pruning"],
+    items: ["Fine-tuning", "Transfer Learning", "Quantization", "Pruning", "ONNX"],
   },
   {
     group: "Backend",
