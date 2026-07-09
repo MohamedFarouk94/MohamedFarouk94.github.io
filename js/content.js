@@ -187,7 +187,7 @@ const SKILLS = [
   },
   {
     group: "Web Scraping",
-    items: ["Requests", "Selenium", "BeautifulSoup", "Scrapling"],
+    items: ["Requests", "httpx", "Selenium", "BeautifulSoup", "Scrapling"],
   },
   {
     group: "Foundations",
