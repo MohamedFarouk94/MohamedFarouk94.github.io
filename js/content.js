@@ -176,10 +176,10 @@ const SKILLS = [
     group: "Machine Learning",
     items: ["scikit-learn", "TensorFlow", "PyTorch", "XGBoost", "CatBoost", "LightGBM"],
   },
-  { group: "LLM Tooling", items: ["LangChain", "LangGraph", "Ollama"] },
+  { group: "LLM & NLP Tooling", items: ["LangChain", "LangGraph", "Ollama", "FAISS", "ChromaDB"] },
   {
     group: "Model Optimization",
-    items: ["Fine-tuning", "Transfer Learning", "Quantization", "Pruning", "ONNX"],
+    items: ["Fine-tuning", "Transfer Learning", "Quantization", "Bitsandbytes", "Pruning", "ONNX"],
   },
   {
     group: "Backend",
@@ -193,7 +193,7 @@ const SKILLS = [
     group: "Foundations",
     items: ["Advanced OOP", "Monte Carlo Simulation", "Algorithms", "Automation"],
   },
-  { group: "Deployment", items: ["Docker", "REST APIs", "Cloud Computing"] },
+  { group: "Deployment", items: ["Docker", "REST APIs", "Cloud Computing", "Hugging Face Spaces", "Vercel", "AWS"] },
 ];
 
 /* ---- Contact / related links — all rendered in one row. */
