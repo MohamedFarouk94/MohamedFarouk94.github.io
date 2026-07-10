@@ -103,3 +103,49 @@
     typeCommand();
   }
 })();
+
+
+(function feedbackForm() {
+  const API_URL = "https://mohfarouk94.pythonanywhere.com/api/messages"; // <- update this
+
+  const form = document.getElementById("feedback-form");
+  const textarea = document.getElementById("feedback-text");
+  const count = document.getElementById("feedback-count");
+  const status = document.getElementById("feedback-status");
+  const submitBtn = document.getElementById("feedback-submit");
+  if (!form) return;
+
+  textarea.addEventListener("input", () => {
+    count.textContent = `${textarea.value.length} / 2000`;
+  });
+
+  form.addEventListener("submit", async (e) => {
+    e.preventDefault();
+    const text = textarea.value.trim();
+    if (!text) return;
+
+    submitBtn.disabled = true;
+    status.textContent = "Sending...";
+    status.className = "feedback-form__status";
+
+    try {
+      const res = await fetch(API_URL, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ text }),
+      });
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.error || "Something went wrong.");
+
+      status.textContent = "Thanks — got it!";
+      status.classList.add("is-success");
+      form.reset();
+      count.textContent = "0 / 2000";
+    } catch (err) {
+      status.textContent = err.message || "Failed to send. Try again later.";
+      status.classList.add("is-error");
+    } finally {
+      submitBtn.disabled = false;
+    }
+  });
+})();

@@ -209,6 +209,17 @@
             </p>
           </div>
           <div class="contact__row" id="contact-row"></div>
+            <div class="feedback-box">
+            <p class="feedback-box__lead">…Or you can send me a feedback or a note directly from here.</p>
+            <form id="feedback-form" class="feedback-form">
+              <textarea id="feedback-text" class="feedback-form__textarea" maxlength="2000" rows="4" placeholder="Type your note..." required></textarea>
+              <div class="feedback-form__footer">
+                <span class="feedback-form__count" id="feedback-count">0 / 2000</span>
+                <button type="submit" class="btn btn--primary" id="feedback-submit">Send</button>
+              </div>
+              <p class="feedback-form__status" id="feedback-status" aria-live="polite"></p>
+            </form>
+          </div>
         </div>
       </section>
     </main>
