@@ -8,14 +8,15 @@ Live at: https://mohamedfarouk94.github.io/
 
 ```
 .
+├── feedback/           # Look the 'About feedback' section below
 ├── index.html          # page structure, all sections
 ├── favicon.png
 ├── css/
 │   └── styles.css      # everything visual
 └── js/
-    ├── content.js       # <- edit THIS to update the site
-    ├── render.js         # turns content.js into HTML, don't need to touch it
-    └── main.js           # theme toggle, nav, terminal typing effect, scroll stuff
+    ├── content.js      # <- edit THIS to update the site
+    ├── render.js       # turns content.js into HTML, don't need to touch it
+    └── main.js         # theme toggle, nav, terminal typing effect, scroll stuff
 ```
 
 If I want to add a project, a notebook, a new skill, or change what I'm currently working on, I just edit `js/content.js`. Everything else re-renders on its own. I don't touch `render.js` or `index.html` unless I'm changing the structure, not the content.
@@ -32,6 +33,10 @@ There's nothing to build. Just open `index.html` in a browser.
 - **Notebooks** — Kaggle-only stuff (competitions, EDA, simulations) that isn't a "project" per se, kept separate on purpose.
 - **Skills** — self-explanatory, my toolset.
 - **Contact** — No only contact channels, but any profiles of mine I wanted to share, including my resume.
+
+## About feedback
+
+I added a feature to send me a note/feedback. I deployed a simple backend to achieve this functionality on `pythonanywhere`. I also made a simple html page (that I did not deploy) to access the received content. All the source code of this feedback thing lives inside `feedback/` including the local admin tool `admin.html`.
 
 ## License
 
