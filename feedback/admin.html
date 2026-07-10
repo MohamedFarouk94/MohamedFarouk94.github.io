@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Feedback Inbox (local only)</title>
+<style>
+  :root {
+    --bg: #0a0e14;
+    --surface: #141a26;
+    --border: #232b3a;
+    --fg: #a9b4c4;
+    --fg-strong: #eef2f8;
+    --fg-dim: #667289;
+    --accent: #5b8dee;
+    --danger: #ff6b6b;
+  }
+  * { box-sizing: border-box; }
+  body {
+    background: var(--bg);
+    color: var(--fg);
+    font-family: -apple-system, "Inter", sans-serif;
+    margin: 0;
+    padding: 2.5em 1.5em 4em;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; }
+  h1 {
+    color: var(--fg-strong);
+    font-size: 1.5rem;
+    margin-bottom: 0.3em;
+  }
+  .sub {
+    color: var(--fg-dim);
+    font-size: 0.85rem;
+    margin-bottom: 2em;
+  }
+  .config-row {
+    display: flex;
+    gap: 0.6em;
+    margin-bottom: 1.5em;
+    flex-wrap: wrap;
+  }
+  input[type="text"], input[type="password"] {
+    flex: 1;
+    min-width: 200px;
+    padding: 0.7em 0.9em;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    color: var(--fg-strong);
+    font-family: inherit;
+    font-size: 0.9rem;
+  }
+  button {
+    padding: 0.7em 1.2em;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    background: var(--surface);
+    color: var(--fg-strong);
+    font-family: inherit;
+    font-size: 0.85rem;
+    cursor: pointer;
+  }
+  button:hover { border-color: var(--accent); color: var(--accent); }
+  button.danger:hover { border-color: var(--danger); color: var(--danger); }
+  button:disabled { opacity: 0.5; cursor: not-allowed; }
+
+  .status {
+    font-size: 0.85rem;
+    color: var(--fg-dim);
+    margin-bottom: 1.5em;
+    min-height: 1.2em;
+  }
+  .status.is-error { color: var(--danger); }
+
+  .msg-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 1.2em 1.4em;
+    margin-bottom: 1em;
+  }
+  .msg-card__meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.75rem;
+    color: var(--fg-dim);
+    margin-bottom: 0.8em;
+    flex-wrap: wrap;
+    gap: 0.5em;
+  }
+  .msg-card__text {
+    color: var(--fg-strong);
+    white-space: pre-wrap;
+    line-height: 1.5;
+    margin-bottom: 0.9em;
+  }
+  .empty {
+    color: var(--fg-dim);
+    text-align: center;
+    padding: 3em 0;
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>Feedback Inbox</h1>
+    <div class="sub">Local admin view — do not deploy or publish this file.</div>
+
+    <div class="config-row">
+      <input type="text" id="api-url" placeholder="Backend URL, e.g. https://yourusername.pythonanywhere.com" />
+      <input type="password" id="admin-key" placeholder="Admin key" />
+      <button id="save-config">Save</button>
+    </div>
+
+    <div class="config-row">
+      <button id="refresh-btn">Refresh</button>
+    </div>
+
+    <div class="status" id="status"></div>
+    <div id="messages"></div>
+  </div>
+
+<script>
+  const els = {
+    apiUrl: document.getElementById("api-url"),
+    adminKey: document.getElementById("admin-key"),
+    saveBtn: document.getElementById("save-config"),
+    refreshBtn: document.getElementById("refresh-btn"),
+    status: document.getElementById("status"),
+    messages: document.getElementById("messages"),
+  };
+
+  // Load any previously saved config from this browser's local storage.
+  els.apiUrl.value = localStorage.getItem("feedback-api-url") || "";
+  els.adminKey.value = localStorage.getItem("feedback-admin-key") || "";
+
+  els.saveBtn.addEventListener("click", () => {
+    localStorage.setItem("feedback-api-url", els.apiUrl.value.trim().replace(/\/$/, ""));
+    localStorage.setItem("feedback-admin-key", els.adminKey.value.trim());
+    setStatus("Saved.");
+    loadMessages();
+  });
+
+  els.refreshBtn.addEventListener("click", loadMessages);
+
+  function setStatus(text, isError = false) {
+    els.status.textContent = text;
+    els.status.className = "status" + (isError ? " is-error" : "");
+  }
+
+  function getConfig() {
+    const apiUrl = localStorage.getItem("feedback-api-url") || "";
+    const adminKey = localStorage.getItem("feedback-admin-key") || "";
+    return { apiUrl, adminKey };
+  }
+
+  function formatTime(iso) {
+    try {
+      return new Date(iso).toLocaleString();
+    } catch {
+      return iso;
+    }
+  }
+
+  async function loadMessages() {
+    const { apiUrl, adminKey } = getConfig();
+    if (!apiUrl || !adminKey) {
+      setStatus("Enter the backend URL and admin key, then click Save.", true);
+      return;
+    }
+
+    setStatus("Loading...");
+    try {
+      const res = await fetch(`${apiUrl}/api/messages`, {
+        headers: { "X-Admin-Key": adminKey },
+      });
+      if (res.status === 401) {
+        setStatus("Unauthorized — check your admin key.", true);
+        return;
+      }
+      if (!res.ok) throw new Error(`Request failed (${res.status})`);
+
+      const data = await res.json();
+      renderMessages(data);
+      setStatus(`${data.length} message${data.length === 1 ? "" : "s"} — last refreshed ${new Date().toLocaleTimeString()}`);
+    } catch (err) {
+      setStatus(`Failed to load: ${err.message}`, true);
+    }
+  }
+
+  async function deleteMessage(id) {
+    const { apiUrl, adminKey } = getConfig();
+    if (!confirm("Delete this message? This can't be undone.")) return;
+
+    try {
+      const res = await fetch(`${apiUrl}/api/messages/${id}`, {
+        method: "DELETE",
+        headers: { "X-Admin-Key": adminKey },
+      });
+      if (!res.ok) throw new Error(`Request failed (${res.status})`);
+      loadMessages();
+    } catch (err) {
+      setStatus(`Failed to delete: ${err.message}`, true);
+    }
+  }
+
+  function renderMessages(list) {
+    if (!list.length) {
+      els.messages.innerHTML = '<div class="empty">No messages yet.</div>';
+      return;
+    }
+    els.messages.innerHTML = list
+      .map(
+        (m) => `
+        <div class="msg-card">
+          <div class="msg-card__meta">
+            <span>${formatTime(m.created_at)} · ${m.ip}</span>
+            <button class="danger" data-id="${m.id}">Delete</button>
+          </div>
+          <div class="msg-card__text"></div>
+        </div>`
+      )
+      .join("");
+
+    // set text via textContent (not innerHTML) so message text can never
+    // be interpreted as HTML/script
+    const cards = els.messages.querySelectorAll(".msg-card");
+    cards.forEach((card, i) => {
+      card.querySelector(".msg-card__text").textContent = list[i].text;
+      card.querySelector("button.danger").addEventListener("click", (e) => {
+        deleteMessage(e.target.dataset.id);
+      });
+    });
+  }
+
+  if (getConfig().apiUrl && getConfig().adminKey) {
+    loadMessages();
+  }
+</script>
+</body>
+</html>
