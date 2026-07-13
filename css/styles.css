@@ -531,11 +531,24 @@ ul {
   background: var(--accent-2);
 }
 
-.now-card__status.is-ongoing {
-  color: var(--fg-dim);
+.now-card__status.is-active {
+  color: var(--accent-2);
+}
+.now-card__status.is-active .dot {
+  background: var(--accent-2);
 }
 
+.now-card__status.is-ongoing {
+  color: #5ecdd8;
+}
 .now-card__status.is-ongoing .dot {
+  background: #5ecdd8;
+}
+
+.now-card__status.is-paused {
+  color: var(--fg-dim);
+}
+.now-card__status.is-paused .dot {
   background: var(--fg-dim);
 }
 

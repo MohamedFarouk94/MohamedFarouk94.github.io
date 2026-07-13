@@ -23,7 +23,7 @@ const CURRENTLY = [
   },
    
   {
-    status: "active",
+    status: "paused",
     title: "Building ChatWithData",
     detail: [
       "I'm working on an agentic system that holds an insightful conversation about a given dataset, reasoning over it, running code against it, and explaining what it finds.",

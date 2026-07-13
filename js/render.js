@@ -37,7 +37,7 @@ const LABELS = {
 function renderCurrently() {
   const el = document.getElementById("currently-grid");
   el.innerHTML = CURRENTLY.map((item) => {
-    const statusClass = item.status === "active" ? "" : "is-ongoing";
+    const statusClass = `is-${item.status}`; // is-active / is-ongoing / is-paused
     const label = item.status === "active" ? "in progress" : item.status;
     const paragraphs = Array.isArray(item.detail) ? item.detail : [item.detail];
     return `
