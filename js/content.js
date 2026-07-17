@@ -15,10 +15,10 @@ const TERMINAL_SESSION = [
 const CURRENTLY = [
    {
     status: "active",
-    title: "Building ERBChat",
+    title: "Building ERPChat",
     detail: [
-      "I'm working on an agentic system that can be integrated with Odoo systems. A chat bot with access to a toolset in the ERB system.",
-      "I'm building this for an Odoo development startup, and I'm excited because it's my first time to interact with ERB systems and Odoo development."
+      "I'm working on an agentic system that can be integrated with Odoo systems. A chat bot with access to a toolset in the ERP system.",
+      "I'm building this for an Odoo development startup, and I'm excited because it's my first time to interact with ERP systems and Odoo development."
     ]
   },
    
