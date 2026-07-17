@@ -31,14 +31,14 @@ const CURRENTLY = [
     ]
   },
    
-  {
+  /*{
     status: "paused",
     title: "Building ChatWithData",
     detail: [
       "I'm working on an agentic system that holds an insightful conversation about a given dataset, reasoning over it, running code against it, and explaining what it finds.",
       "I paused this project multiple times because of my Master's degree study and other urgent works. I hope I can finish it soon!"
     ]
-  },
+  },*/
    
   {
     status: "ongoing",
