@@ -13,6 +13,15 @@ const TERMINAL_SESSION = [
 /* ---- "Currently" — what I'm doing right now.
    status: "active" | "ongoing" | "paused"     */
 const CURRENTLY = [
+   {
+    status: "active",
+    title: "Building ERBChat",
+    detail: [
+      "I'm working on an agentic system that can be integrated with Odoo systems. A chat bot with access to a toolset in the ERB system.",
+      "I'm building this for an Odoo development startup, and I'm excited because it's my first time to interact with ERB systems and Odoo development."
+    ]
+  },
+   
   {
     status: "active",
     title: "Stanford's LLM Curriculum",
