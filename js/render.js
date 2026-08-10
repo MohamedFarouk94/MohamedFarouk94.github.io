@@ -124,6 +124,33 @@ function renderNotebooks() {
   }).join("");
 }
 
+const EDU_META = {
+  bachelor: { icon: "fa-graduation-cap", color: "var(--kaggle)", label: "Bachelor" },
+  master: { icon: "fa-user-graduate", color: "var(--accent)", label: "Master" },
+  scholarship: { icon: "fa-award", color: "var(--accent-2)", label: "Scholarship" },
+};
+
+function renderEducation() {
+  const el = document.getElementById("education-timeline");
+  if (!el || typeof EDUCATION === "undefined") return;
+  el.innerHTML = EDUCATION.map((item) => {
+    const meta = EDU_META[item.type];
+    return `
+      <div class="edu-item" style="--edu-color: ${meta.color}">
+        <div class="edu-item__rail">
+          <div class="edu-item__marker"><i class="fa-solid ${meta.icon}" aria-hidden="true"></i></div>
+          <div class="edu-item__line"></div>
+        </div>
+        <div class="edu-item__content">
+          <span class="edu-item__type">${meta.label}</span>
+          <h3>${item.institution}</h3>
+          <div class="edu-item__detail">${item.detail}</div>
+          <div class="edu-item__year">${item.note ? item.note + " · " : ""}${item.year}</div>
+        </div>
+      </div>`;
+  }).join("");
+}
+
 function renderSkills() {
   const el = document.getElementById("skills-groups");
   el.innerHTML = SKILLS.map((g) => {
@@ -152,6 +179,7 @@ function renderAll() {
   renderProjects();
   renderExperience();
   renderNotebooks();
+  renderEducation();
   renderSkills();
   renderContact();
 }

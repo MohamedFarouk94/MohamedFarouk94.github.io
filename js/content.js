@@ -200,6 +200,36 @@ const NOTEBOOKS = [
   },
 ];
 
+/* ---- Education — type must be "bachelor", "master", or "scholarship".
+   note is optional (e.g. "in progress"). */
+const EDUCATION = [
+  {
+    type: "bachelor",
+    institution: "Pharos University of Alexandria",
+    detail: "Faculty of Engineering — Department of Computer Engineering",
+    year: "2020",
+  },
+  {
+    type: "scholarship",
+    institution: "Egyptian Ministry of Communications and Information Technology",
+    detail: "FWD Scholarship — Machine Learning Program",
+    year: "2022",
+  },
+  {
+    type: "scholarship",
+    institution: "Egyptian Ministry of Communication and Information Technology",
+    detail: "DEPI Scholarship — AWS Machine Learning Engineering Program",
+    year: "2024",
+  },
+  {
+    type: "master",
+    institution: "Alexandria University",
+    detail: "Faculty of Science — Department of Mathematics and Computer Science",
+    note: "in progress",
+    year: "expected 2028",
+  },
+];
+
 /* ---- Skills — grouped by category. Add/remove freely. */
 const SKILLS = [
   { group: "Languages", items: ["Python", "C/C++", "SQL", "JavaScript", "Java/Kotlin", "MATLAB/Octave"] },
