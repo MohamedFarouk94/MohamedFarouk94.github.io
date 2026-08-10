@@ -158,7 +158,7 @@ const EXPERIENCE = [
     context: "Building RAG System for AI-Powered hiring process",
     timeframe: "2025",
     description:
-      "Built a RAG system for an AI-driven hiring company using a local phi-4 model to generate job descriptions, interview questions, and personality tests from previously curated OpenAI API content, eliminating $5/day in recurring API costs while matching or improving response latency.",
+      "Built a RAG system for an AI-driven hiring company, replacing their reliance on the OpenAI API with a locally hosted Phi-4 model.<br><br>The system generates job descriptions, interview questions, and personality tests, grounded in a curated set of previously generated OpenAI content used as reference.<br><br>The switch eliminated roughly $5/day in recurring API costs while matching, and in some cases improving, response latency compared to the original OpenAI-based pipeline.",
     stack: ["LLM", "RAG", "Django", "Ollama"],
   },
   
