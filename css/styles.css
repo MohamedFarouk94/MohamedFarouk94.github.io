@@ -676,6 +676,72 @@ ul {
 }
 
 /* ===================================================================
+   EXPERIENCE
+=================================================================== */
+.experience__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(22em, 1fr));
+  gap: 1.4em;
+}
+
+.experience-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 1.8em;
+}
+
+.experience-card__head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1em;
+  margin-bottom: 0.9em;
+}
+
+.experience-card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.2em;
+}
+
+.experience-card__context {
+  font-size: 0.85rem;
+  color: var(--fg-dim);
+}
+
+.experience-card__timeframe {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--fg-dim);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 0.25em 0.6em;
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+
+.experience-card__desc {
+  font-size: 0.92rem;
+  color: var(--fg);
+  margin-bottom: 1.2em;
+}
+
+.experience-card__stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5em;
+  margin-bottom: 1.2em;
+}
+
+.experience-card__badge {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--fg-dim);
+  border-top: 1px solid var(--border);
+  padding-top: 1em;
+}
+
+/* ===================================================================
    NOTEBOOKS — distinct, lighter card style
 =================================================================== */
 .notebooks__grid {

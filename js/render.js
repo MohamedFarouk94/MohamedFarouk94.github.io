@@ -82,6 +82,29 @@ function renderProjects() {
   }).join("");
 }
 
+function renderExperience() {
+  const el = document.getElementById("experience-grid");
+  if (!el || typeof EXPERIENCE === "undefined") return;
+  el.innerHTML = EXPERIENCE.map((e) => {
+    const timeframe = e.timeframe ? `<span class="experience-card__timeframe">${e.timeframe}</span>` : "";
+    return `
+      <article class="experience-card">
+        <div class="experience-card__head">
+          <div>
+            <h3>${e.role}</h3>
+            <div class="experience-card__context">${e.context}</div>
+          </div>
+          ${timeframe}
+        </div>
+        <p class="experience-card__desc">${e.description}</p>
+        <div class="experience-card__stack">
+          ${e.stack.map((s) => `<span class="tag">${s}</span>`).join("")}
+        </div>
+        <div class="experience-card__badge">🔒 client work · code private</div>
+      </article>`;
+  }).join("");
+}
+
 function renderNotebooks() {
   const el = document.getElementById("notebooks-grid");
   el.innerHTML = NOTEBOOKS.map((n) => {
@@ -128,6 +151,7 @@ function renderContact() {
 function renderAll() {
   renderCurrently();
   renderProjects();
+  renderExperience();
   renderNotebooks();
   renderSkills();
   renderContact();
