@@ -167,7 +167,7 @@ const EXPERIENCE = [
     context: "Designing ML and Automation Solutions",
     timeframe: "2024",
     description:
-      "Designed and deployed 5+ ML solutions for clients spanning predictive analytics, Monte Carlo simulations, web scraping pipelines, chat bots, and recommender systems.<br>Architected multi-tenant session management in FastAPI, isolating state and preventing cross-client data leakage while serving concurrent workloads across multiple freelance Data Science engagements.",
+      "Designed and deployed 5+ ML solutions for clients spanning predictive analytics, Monte Carlo simulations, web scraping pipelines, chat bots, and recommender systems.<br><br>Architected multi-tenant session management in FastAPI, isolating state and preventing cross-client data leakage while serving concurrent workloads across multiple freelance Data Science engagements.",
     stack: ["Machine Learning", "LangChain", "Django", "FastAPI", "Monte Carlo Simulations", "Web Scraping"],
   },
 ];
