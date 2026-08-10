@@ -154,7 +154,7 @@ const PROJECTS = [
    a links row. timeframe is optional — omit the key to leave it out. */
 const EXPERIENCE = [
   {
-    role: "Machine Learning Engineer",
+    role: "AI Backend Engineer",
     context: "Building RAG System for AI-Powered hiring process",
     timeframe: "2025",
     description:
@@ -163,12 +163,12 @@ const EXPERIENCE = [
   },
   
   {
-    role: "Machine Learning Engineer",
-    context: "Building RAG System for AI-Powered hiring process",
-    timeframe: "2025",
+    role: "Freelance ML and Automation Engineer",
+    context: "Designing ML and Automation Solutions",
+    timeframe: "2024",
     description:
-      "Built a RAG system for an AI-driven hiring company using a local phi-4 model to generate job descriptions, interview questions, and personality tests from previously curated OpenAI API content, eliminating $5/day in recurring API costs while matching or improving response latency.",
-    stack: ["LLM", "RAG", "Django", "Ollama"],
+      "Designed and deployed 5+ ML solutions for clients spanning predictive analytics, Monte Carlo simulations, web scraping pipelines, chat bots, and recommender systems.<br>Architected multi-tenant session management in FastAPI, isolating state and preventing cross-client data leakage while serving concurrent workloads across multiple freelance Data Science engagements.",
+    stack: ["Machine Learning", "LangChain", "Django", "FastAPI", "Monte Carlo Simulations", "Web Scraping"],
   },
 ];
 
