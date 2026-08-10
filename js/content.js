@@ -161,7 +161,15 @@ const EXPERIENCE = [
       "Built a RAG system for an AI-driven hiring company using a local phi-4 model to generate job descriptions, interview questions, and personality tests from previously curated OpenAI API content, eliminating $5/day in recurring API costs while matching or improving response latency.",
     stack: ["LLM", "RAG", "Django", "Ollama"],
   },
-  // Add more entries the same way — copy this block and edit the fields.
+  
+  {
+    role: "Machine Learning Engineer",
+    context: "Building RAG System for AI-Powered hiring process",
+    timeframe: "2025",
+    description:
+      "Built a RAG system for an AI-driven hiring company using a local phi-4 model to generate job descriptions, interview questions, and personality tests from previously curated OpenAI API content, eliminating $5/day in recurring API costs while matching or improving response latency.",
+    stack: ["LLM", "RAG", "Django", "Ollama"],
+  },
 ];
 
 /* ---- Notebooks — Kaggle-only work: exploration, competitions, simulations.
