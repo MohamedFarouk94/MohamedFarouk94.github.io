@@ -100,7 +100,6 @@ function renderExperience() {
         <div class="experience-card__stack">
           ${e.stack.map((s) => `<span class="tag">${s}</span>`).join("")}
         </div>
-        <div class="experience-card__badge">🔒 client work · code private</div>
       </article>`;
   }).join("");
 }
