@@ -232,32 +232,38 @@ const EDUCATION = [
 
 /* ---- Skills — grouped by category. Add/remove freely. */
 const SKILLS = [
-  { group: "Languages", items: ["Python", "C/C++", "SQL", "JavaScript", "Java/Kotlin", "MATLAB/Octave"] },
-  { group: "Data", items: ["Pandas", "NumPy", "SciPy"] },
   {
     group: "Machine Learning",
     items: ["scikit-learn", "TensorFlow", "PyTorch", "XGBoost", "CatBoost", "LightGBM"],
   },
-  { group: "LLM & NLP Tooling", items: ["LangChain", "LangGraph", "Ollama", "FAISS", "ChromaDB"] },
+  {
+    group: "LLM & NLP",
+    items: ["LangChain", "LangGraph", "RAG", "Prompt Engineering", "Ollama", "FAISS", "ChromaDB"],
+  },
   {
     group: "Model Optimization",
     items: ["Fine-tuning", "Transfer Learning", "Quantization", "Bitsandbytes", "Pruning", "ONNX"],
   },
+  { group: "Data & Scientific Computing", items: ["Pandas", "NumPy", "SciPy"] },
+   
+  { group: "Languages", items: ["Python", "C/C++", "SQL", "JavaScript", "Java/Kotlin", "MATLAB/Octave"] },
   {
     group: "Backend",
     items: ["Django", "DRF", "Django Channels", "Flask", "FastAPI"],
   },
   {
-    group: "Web Scraping",
-    items: ["Requests", "httpx", "Selenium", "BeautifulSoup", "Scrapling"],
+    group: "Automation & Scraping",
+    items: ["Requests", "httpx", "Selenium", "BeautifulSoup", "Scrapling", "Automation"],
+  },
+  {
+    group: "Deployment",
+    items: ["Docker", "REST APIs", "Cloud Computing", "Hugging Face Spaces", "Vercel", "AWS"],
   },
   {
     group: "Foundations",
-    items: ["Advanced OOP", "Monte Carlo Simulation", "Algorithms", "Automation"],
+    items: ["Advanced OOP", "Monte Carlo Simulation", "Algorithms"],
   },
-  { group: "Deployment", items: ["Docker", "REST APIs", "Cloud Computing", "Hugging Face Spaces", "Vercel", "AWS"] },
 ];
-
 /* ---- Contact / related links — all rendered in one row. */
 const CONTACT_LINKS = [
   { type: "resume", href: "https://drive.google.com/file/d/15UtTzZOFZgllUXe3Ia06lhF5_cwfmMdm/view" },
