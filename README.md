@@ -30,8 +30,10 @@ There's nothing to build. Just open `index.html` in a browser.
 - **About** — who I am, what I can help with.
 - **Currently** — what I'm actively working on/studying. This one I try to keep updated often, maybe on a daily basis, but let's be realistic, it won't happen!
 - **Projects** — anything with a GitHub link.
+- **Experience** — I created this section so I can post work I've done but I don't own the code to share.
 - **Notebooks** — Kaggle-only stuff (competitions, EDA, simulations) that isn't a "project" per se, kept separate on purpose.
-- **Skills** — self-explanatory, my toolset.
+- **Education** — self-explanatory; bachelor, master's, and scholarships.
+- **Skills** — self-explanatory; my toolset.
 - **Contact** — No only contact channels, but any profiles of mine I wanted to share, including my resume.
 
 ## About feedback
