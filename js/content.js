@@ -83,7 +83,7 @@ const PROJECTS = [
     name: "Natural-Language Database Query System",
     tagline: "Ask your database a question",
     description:
-      "Translates plain-English questions into SQL and runs them against a real local database — no query syntax required.",
+      "Translates plain-English questions into SQL and runs them against a real local database — Local model, trained and optimized.",
     stack: ["Transfer Learning", "Model Optimization", "LLM", "LangChain", "SQL"],
     links: [
       {
