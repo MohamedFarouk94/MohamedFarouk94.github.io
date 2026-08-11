@@ -242,7 +242,7 @@ const SKILLS = [
   },
   {
     group: "Model Optimization",
-    items: ["Fine-tuning", "Transfer Learning", "Quantization", "Bitsandbytes", "Pruning", "ONNX"],
+    items: ["Fine-tuning", "LoRA/QLoRA", "Transfer Learning", "Quantization", "Bitsandbytes", "Pruning", "ONNX"],
   },
   { group: "Data & Scientific Computing", items: ["Pandas", "NumPy", "SciPy"] },
    
