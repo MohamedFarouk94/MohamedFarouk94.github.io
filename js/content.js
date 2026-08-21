@@ -50,6 +50,29 @@ const CURRENTLY = [
   },
 ];
 
+/* ---- Experience — client/freelance work you can't link to (no
+   public repo, NDA, etc.). Structured like Projects, just without
+   a links row. timeframe is optional — omit the key to leave it out. */
+const EXPERIENCE = [
+  {
+    role: "AI Backend Engineer",
+    context: "Building RAG System for AI-Powered hiring process",
+    timeframe: "2025",
+    description:
+      "Built a RAG system for an AI-driven hiring company, replacing their reliance on the OpenAI API with a locally hosted Phi-4 model.<br><br>The system generates job descriptions, interview questions, and personality tests, grounded in a curated set of previously generated OpenAI content used as reference.<br><br>The switch eliminated roughly $5/day in recurring API costs while matching, and in some cases improving, response latency compared to the original OpenAI-based pipeline.",
+    stack: ["LLM", "RAG", "Django", "Ollama"],
+  },
+  
+  {
+    role: "Freelance ML and Automation Engineer",
+    context: "Designing ML and Automation Solutions",
+    timeframe: "2024",
+    description:
+      "Designed and deployed 5+ ML solutions for clients spanning predictive analytics, Monte Carlo simulations, web scraping pipelines, chat bots, and recommender systems.<br><br>Architected multi-tenant session management in FastAPI, isolating state and preventing cross-client data leakage while serving concurrent workloads across multiple freelance Data Science engagements.",
+    stack: ["Machine Learning", "LangChain", "Django", "FastAPI", "Monte Carlo Simulations", "Web Scraping"],
+  },
+];
+
 /* ---- Projects — anything with a GitHub link.*/
 const PROJECTS = [
   {
@@ -149,28 +172,6 @@ const PROJECTS = [
   },
 ];
 
-/* ---- Experience — client/freelance work you can't link to (no
-   public repo, NDA, etc.). Structured like Projects, just without
-   a links row. timeframe is optional — omit the key to leave it out. */
-const EXPERIENCE = [
-  {
-    role: "AI Backend Engineer",
-    context: "Building RAG System for AI-Powered hiring process",
-    timeframe: "2025",
-    description:
-      "Built a RAG system for an AI-driven hiring company, replacing their reliance on the OpenAI API with a locally hosted Phi-4 model.<br><br>The system generates job descriptions, interview questions, and personality tests, grounded in a curated set of previously generated OpenAI content used as reference.<br><br>The switch eliminated roughly $5/day in recurring API costs while matching, and in some cases improving, response latency compared to the original OpenAI-based pipeline.",
-    stack: ["LLM", "RAG", "Django", "Ollama"],
-  },
-  
-  {
-    role: "Freelance ML and Automation Engineer",
-    context: "Designing ML and Automation Solutions",
-    timeframe: "2024",
-    description:
-      "Designed and deployed 5+ ML solutions for clients spanning predictive analytics, Monte Carlo simulations, web scraping pipelines, chat bots, and recommender systems.<br><br>Architected multi-tenant session management in FastAPI, isolating state and preventing cross-client data leakage while serving concurrent workloads across multiple freelance Data Science engagements.",
-    stack: ["Machine Learning", "LangChain", "Django", "FastAPI", "Monte Carlo Simulations", "Web Scraping"],
-  },
-];
 
 /* ---- Notebooks — Kaggle-only work: exploration, competitions, simulations.
    These get their own lighter-weight card style, separate from Projects. */

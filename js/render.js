@@ -176,8 +176,8 @@ function renderContact() {
 
 function renderAll() {
   renderCurrently();
-  renderProjects();
   renderExperience();
+  renderProjects();
   renderNotebooks();
   renderEducation();
   renderSkills();
