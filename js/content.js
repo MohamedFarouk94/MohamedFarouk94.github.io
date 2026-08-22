@@ -24,10 +24,10 @@ const CURRENTLY = [
    
   {
     status: "active",
-    title: "Stanford's LLM Curriculum",
+    title: "Stanford's Self-Improving AI Agents Curriculum",
     detail: [
-      "I'm currently self-studying the Stanford CME295 Transformers & LLMs full course.",
-      "I believe it's the finest way to revisit the mathematical core of LLM and NLP, which is something you may easily drop if your work heavily depends on high-level design."
+      "I've recently finished the Stanford CME295 course of Transformers & LLMs, which was a decent way to revisit the mathematical core of LLM and NLP; a  something that can be easily forgotten if your work heavily depends on high-level design.",
+      "Now I'm following it with the Stanford CS329A course of Self-Improving AI Agents. I'm also working on an educational notebook I'll publish soon where I apply the concepts I learnt and/or revisited."
     ]
   },
    
