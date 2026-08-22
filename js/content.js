@@ -18,8 +18,8 @@ const CURRENTLY = [
     title: "Building ERPChat",
     detail: [
       "I'm working on an agentic system that can be integrated with Odoo systems. A chat bot with access to a toolset in the ERP system.",
-      "I'm building this for an Odoo development startup, and I'm excited because it's my first time to interact with ERP systems and Odoo development.",
-      "This project is almost done. I've delivered the agentic part. In the next days I'll be working on integrating it with actual ERP systems, and testing its life cycle."
+      "I'm building this for an Odoo development startup, and I'm excited because it's my first time interacting with ERP systems and Odoo development.",
+      "This project is almost done. I've delivered the agentic part. In the next days I'll be working on integrating it with actual ERP systems and testing its life cycle."
     ]
   },
    
@@ -27,8 +27,8 @@ const CURRENTLY = [
     status: "active",
     title: "Stanford's Self-Improving AI Agents Curriculum",
     detail: [
-      "I've recently finished the Stanford CME295 course of Transformers & LLMs, which was a decent way to revisit the mathematical core of LLM and NLP; a  something that can be easily forgotten if your work heavily depends on high-level design.",
-      "Now I'm following it with the Stanford CS329A course of Self-Improving AI Agents. I'm also working on an educational notebook I'll publish soon where I apply the concepts I learnt and/or revisited."
+      "I've recently finished the Stanford CME295 course on Transformers & LLMs, which was a decent way to revisit the mathematical core of LLMs and NLP; something that can be easily forgotten if your work heavily depends on high-level design.",
+      "Now I'm following it with the Stanford CS329A course on Self-Improving AI Agents. I'm also working on an educational notebook I'll publish soon where I apply the concepts I learned and/or revisited."
     ]
   },
    
