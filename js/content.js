@@ -18,7 +18,7 @@ const CURRENTLY = [
     title: "Building ERPChat",
     detail: [
       "I'm working on an agentic system that can be integrated with Odoo systems. A chat bot with access to a toolset in the ERP system.",
-      "I'm building this for an Odoo development startup, and I'm excited because it's my first time to interact with ERP systems and Odoo development."
+      "I'm building this for an Odoo development startup, and I'm excited because it's my first time to interact with ERP systems and Odoo development.",
       "This project is almost done. I've delivered the agentic part. In the next days I'll be working on integrating it with actual ERP systems, and testing its life cycle."
     ]
   },
