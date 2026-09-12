@@ -219,7 +219,7 @@ const EDUCATION = [
   },
   {
     type: "scholarship",
-    institution: "Egyptian Ministry of Communication and Information Technology",
+    institution: "Egyptian Ministry of Communications and Information Technology",
     detail: "DEPI Scholarship — AWS Machine Learning Engineering Program",
     year: "2024",
   },
