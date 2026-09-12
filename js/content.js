@@ -273,9 +273,9 @@ const CONTACT_LINKS = [
   { type: "linkedin", href: "https://www.linkedin.com/in/mohfarouk94/" },
   { type: "kaggle", href: "https://www.kaggle.com/mohamedfarouk94" },
   { type: "credly", href: "https://www.credly.com/users/mohamed-farouk.87e6e0b3/badges#credly" },
-  { type: "upwork", href: "https://www.upwork.com/freelancers/~010a4765fdccc37961" },
+  //{ type: "upwork", href: "https://www.upwork.com/freelancers/~010a4765fdccc37961" },
   { type: "whatsapp", href: "https://wa.me/201281259262" },
   { type: "mail", href: "mailto:mohamedfarouk1994@gmail.com" },
-  // { type: "twitter", href: "https://twitter.com/mohfarouk94" },
+  //{ type: "twitter", href: "https://twitter.com/mohfarouk94" },
   { type: "instagram", href: "https://instagram.com/mohfarouk94" },
 ];
